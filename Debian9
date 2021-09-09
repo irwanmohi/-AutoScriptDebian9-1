@@ -12,6 +12,15 @@ OS=`uname -m`;
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
+#detail nama perusahaan
+country=MY
+state=SEL
+locality=Gombak
+organization=regsub.cf
+organizationalunit=regsub.cf
+commonname=vpn.aidan.my
+email=admin@regsub.cf
+
 # configure rc.local
 cat <<EOF >/etc/rc.local
 #!/bin/sh -e
